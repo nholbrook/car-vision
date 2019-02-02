@@ -1,0 +1,9 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+# ‘QLive’ is an example project name, please change it to yours.
+target 'carVision' do
+  # use_frameworks!
+  pod 'NodeMediaClient'
+  pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
+
+end
