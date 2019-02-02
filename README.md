@@ -1,4 +1,3 @@
 # car-vision
 
-Hannah Carver
-Paul Sun
+Hannah Carver, Paul Sun
