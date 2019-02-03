@@ -8,7 +8,7 @@
  */
 
 import React, {Component} from 'react';
-import { Platform, Text, TextInput, View, Button, StatusBar, StyleSheet } from 'react-native';
+import { Platform, Text, TextInput, View, Button, StatusBar, StyleSheet, PermissionsAndroid } from 'react-native';
 import { NodeCameraView } from 'react-native-nodemediaclient';
 import ActionButton from 'react-native-action-button';
 import Icon from 'react-native-vector-icons/Ionicons';
