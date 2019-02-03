@@ -13,6 +13,14 @@ import { NodeCameraView } from 'react-native-nodemediaclient';
 import ActionButton from 'react-native-action-button';
 import Icon from 'react-native-vector-icons/Ionicons';
 
+export const requestPermissions = async () => {
+    if(Platform.OS === 'android') {
+        const result = await PermissionsAndroid.request(PermissionsAndroid.PERMISSIONS.CAMERA)
+        return result === PermissionsAndroid.RESULTS.GRANTED || result === true
+    }
+    return true;
+}
+
 type Props = {};
 export default class App extends Component<Props> {
   constructor(props) {
@@ -36,7 +44,12 @@ export default class App extends Component<Props> {
                 video={{ preset: 1, bitrate: 500000, profile: 1, fps: 15, videoFrontMirror: false }}
                 smoothSkinLevel={3}
                 autopreview={true}
-              />
+              >
+              ({ _, status }) => {
+                if(status === 'PENDING_AUTHORIZATION')
+                    requestPermissions()
+              }}
+              </NodeCameraView>
               <ActionButton
                 buttonColor="#1abc9c"
                 offsetY={24}
