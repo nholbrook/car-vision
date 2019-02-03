@@ -36,4 +36,4 @@ This was intiially concieved as a proof of concept for technology that could eve
 * **Nicholas Holbrook** - *iOS / Backend Development* - [ndh175](https://github.com/ndh175)
 * **Hannah Carver** - *Machine Learning*
 * **Paul Sun** - *Android / React Native Development*
-* **________**
+* **Jiexun Xu** - *Android / React Native Development*
