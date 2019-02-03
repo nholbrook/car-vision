@@ -2,7 +2,7 @@
 
 Made for [MakeHarvard 2019](https://makeharvard2019.devpost.com)
 
-![alt text](https://github.com/ndh175/car-vision/raw/master/Screen%20Shot%202019-02-03%20at%2010.46.41%20AM.png)
+![alt text](https://github.com/ndh175/car-vision/raw/master/Screen%20Shot%202019-02-03%20at%2011.01.03%20AM.png)
 
 # Inspiration
 
