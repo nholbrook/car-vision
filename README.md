@@ -16,24 +16,24 @@ carVision is a mobile application that aims to bring modern saftey features to o
 
 # Challenges we ran into
 
-
+We were unable to interface our RTMP livestream with AWS Kinesis which we were then planning to integrate with our machine learning running on the cloud. We also had issues setting up react native for android on windows laptops.
 
 
 # Accomplishments we're proud of
 
-
+We're proud of figuring out how to get react native running ios/andoroid on both mac/windows. We're also proud of the neural network we set up and the generation of a livestream form react native.
 
 # What we learned
 
-
+We all learned a lot about livestreaming protocals, react native setup and troubleshooting, and machine learning.
 
 # Future
 
-
+This was intiially concieved as a proof of concept for technology that could eventually be implemented into a heads up display (HUD) on a windshield of a vehicle. This would also be useful as a standalone application.
 
 ## Authors
 
 * **Nicholas Holbrook** - *iOS / Backend Development* - [ndh175](https://github.com/ndh175)
-* **Hannah Carver**
-* **Paul Sun**
+* **Hannah Carver** - *Machine Learning*
+* **Paul Sun** - *Android / React Native Development*
 * **________**
