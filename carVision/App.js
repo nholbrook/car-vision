@@ -12,6 +12,7 @@ import { Platform, Text, TextInput, View, Button, StatusBar, StyleSheet, Permiss
 import { NodeCameraView } from 'react-native-nodemediaclient';
 import ActionButton from 'react-native-action-button';
 import Icon from 'react-native-vector-icons/Ionicons';
+import {PermissionsAndroid} from 'react-native';
 
 async function requestCameraPermission() {
   try {
