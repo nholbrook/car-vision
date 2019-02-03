@@ -13,12 +13,27 @@ import { NodeCameraView } from 'react-native-nodemediaclient';
 import ActionButton from 'react-native-action-button';
 import Icon from 'react-native-vector-icons/Ionicons';
 
-export const requestPermissions = async () => {
-    if(Platform.OS === 'android') {
-        const result = await PermissionsAndroid.request(PermissionsAndroid.PERMISSIONS.CAMERA)
-        return result === PermissionsAndroid.RESULTS.GRANTED || result === true
+async function requestCameraPermission() {
+  try {
+    const granted = await PermissionsAndroid.request(
+      PermissionsAndroid.PERMISSIONS.CAMERA,
+      {
+        title: 'Cool Photo App Camera Permission',
+        message:
+          'Need access to your camera bc we want it',
+        buttonNeutral: 'Ask Me Later',
+        buttonNegative: 'Cancel',
+        buttonPositive: 'OK',
+      },
+    );
+    if (granted === PermissionsAndroid.RESULTS.GRANTED) {
+      console.log('You can use the camera');
+    } else {
+      console.log('Camera permission denied');
     }
-    return true;
+  } catch (err) {
+    console.warn(err);
+  }
 }
 
 type Props = {};
@@ -29,6 +44,18 @@ export default class App extends Component<Props> {
   }
 
   render() {
+
+    state = {
+      hasCameraPermission: null
+    };
+
+    permissionCheck = async () => {
+      const { status } = await Permissions.askAsync(Permissions.CAMERA);
+      this.setState({
+        hasCameraPermission: status === 'granted'
+      });
+    };
+
     return (
       <View style={{ flex: 1, backgroundColor: '#333' }}>
               <StatusBar
@@ -44,12 +71,7 @@ export default class App extends Component<Props> {
                 video={{ preset: 1, bitrate: 500000, profile: 1, fps: 15, videoFrontMirror: false }}
                 smoothSkinLevel={3}
                 autopreview={true}
-              >
-              ({ _, status }) => {
-                if(status === 'PENDING_AUTHORIZATION')
-                    requestPermissions()
-              }}
-              </NodeCameraView>
+              />
               <ActionButton
                 buttonColor="#1abc9c"
                 offsetY={24}
