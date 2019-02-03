@@ -12,7 +12,7 @@ carVision is a mobile application that aims to bring modern saftey features to o
 
 # How we built it
 
-
+The mobile application is built on react native with a plugin enabling us to create a RTMP livestream from the device. This framework allows our application to be platform agnostic, and run on both iOS and android from the same source code. The backend is running Yolo in conjunction with Tensorflow and OpenCV.
 
 # Challenges we ran into
 
