@@ -2,6 +2,8 @@
 
 Made for [MakeHarvard 2019](https://makeharvard2019.devpost.com)
 
+![alt text](https://github.com/ndh175/car-vision/raw/master/Screen%20Shot%202019-02-03%20at%2010.46.41%20AM.png)
+
 # Inspiration
 
 We were interested in working with machine learningm, image recognition, augmented reality, and automobile saftey. We decided on developing carVision in an effort to combine all four.   
