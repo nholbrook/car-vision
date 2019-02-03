@@ -6,7 +6,7 @@ Made for [MakeHarvard 2019](https://makeharvard2019.devpost.com)
 
 # Inspiration
 
-We were interested in working with machine learningm, image recognition, augmented reality, and automobile saftey. We decided on developing carVision in an effort to combine all four.   
+We were interested in working with machine learning, image recognition, augmented reality, and automobile saftey. We decided on developing carVision in an effort to combine all four.   
 
 # What is does
 
